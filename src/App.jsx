@@ -1,12 +1,13 @@
-import './App.css'
+import './App.css';
+import Home from "./pages/Home.jsx";
 
 function App() {
 
 
   return (
     <>
-      <div>
-        urlss
+      <div className="bg-stone-300 h-svh">
+        <Home />
       </div>
     </>
   )
