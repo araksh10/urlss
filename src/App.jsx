@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-stone-300 h-svh overflow-hidden">
+      <div className="bg-stone-300 h-svh overflow-x-hidden">
           <Navbar />
         <Home />
       </div>
