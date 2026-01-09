@@ -3,7 +3,7 @@ import Logo from "../assets/logo.png";
 
 const Navbar = () => {
     return (
-        <div>
+        <div className="select-none">
             <div className="flex justify-between p-3 bg-stone-600 text-orange-400 ">
                 <section>
                     <p className="text-3xl font-extrabold italic">URL-SS</p>
