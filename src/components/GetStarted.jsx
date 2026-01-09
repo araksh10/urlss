@@ -1,5 +1,6 @@
 import React from 'react';
 import {Hand, MousePointer2} from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const GetStarted = () => {
     return (
@@ -13,13 +14,17 @@ const GetStarted = () => {
                 <p>Rather use <span className="text-orange-700 font-bold italic">URL-SS</span> to shorten it and have fun.</p>
             </div>
             <div className="my-5">
-                <button className="h-20 w-100 bg-stone-700 rounded-full text-5xl text-stone-300 font-bold text-center">
-                    Get Started
-                </button>
+                <Link to="/login">
+                    <button className="h-20 w-100 bg-stone-700 rounded-full text-5xl text-stone-300 font-bold text-center">
+                        Get Started
+                    </button>
+                </Link>
             </div>
             <div>
                 <p>Already a member? Then get inside now.</p>
-                <a className="flex text-blue-400">Click here to log-in <MousePointer2 className="mt-2"/> </a>
+                <Link to="/register">
+                    <div className="flex text-blue-400">Click here to log-in <MousePointer2 className="mt-2"/> </div>
+                </Link>
             </div>
         </div>
     )
